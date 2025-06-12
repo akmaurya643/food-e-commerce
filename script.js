@@ -1,0 +1,220 @@
+let dropdown = document.getElementById("dropdown");
+let dropdownList = document.getElementById("dropdown-list");
+let addCard = document.getElementById("addCard");
+let showCard = document.getElementById("showCard");
+let closeCard = document.getElementById("closeCard");
+let cardBox = document.getElementById("card-box");
+let productDitals= document.getElementById("product-ditals");
+let closepage = document.getElementById("closepage");
+let cardItem = document.querySelectorAll(".card-item");
+
+
+    let loginPage = document.getElementById("login-page");
+    let loginBtn = document.getElementById("login-btn");
+    
+    loginBtn.addEventListener("click", function () {
+        loginPage.style.display = "flex";
+    });
+   
+    
+
+  
+
+    let register = document.getElementById("register");
+    let registerBtn = document.getElementById("register-btn");
+    
+    registerBtn.addEventListener("click", function () {
+        register.style.display = "flex";
+       
+        
+        
+    });
+
+
+cardItem.forEach(function (item) {
+    //  item.stopPropagation();
+    item.addEventListener("click", function (e) {
+        e.stopPropagation();
+        productDitals.style.display = "flex";
+        // console.log(e.target.parentNode);
+    })
+    closepage.addEventListener("click", function () {
+        productDitals.style.display = "none";
+    })
+
+})
+
+
+
+    let loginTo = document.getElementById("loginTo");
+    let addressBpx = document.getElementById("address-bpx");
+    loginTo.addEventListener("click", function () {
+        addressBpx.style.display = "block";
+        // console.log("loginTo");
+        
+        
+    });
+
+    dropdownList.addEventListener("mouseover", function () {
+    // dropdown.style.display = "block";
+    dropdown.style.top = "5rem";
+})
+    dropdownList.addEventListener("mouseout", function () {
+    // dropdown.style.display = "block";
+    dropdown.style.top = "-30rem";
+})
+
+
+
+
+    addCard.addEventListener("click", function () {
+    showCard.style.display = "block";
+})
+closeCard.addEventListener("click", function () {
+    showCard.style.display = "none";
+})
+
+
+
+const form = document.getElementById("address-bpx");
+form.addEventListener("submit", function(e){
+    e.preventDefault();
+    const formData = new FormData(form);
+    const formDataObject = Object.fromEntries(formData.entries());
+       console.log("Form data object:", formDataObject);
+       localStorage.setItem("user", JSON.stringify(formDataObject))
+       window.location.href = "index2.html"
+     
+})
+
+// function product(){
+//     let cardBox = document.getElementById("card-box");
+//     cardBox.forEach((item, key) => {
+//          let div = document.createElement("div")
+//         div.addEventListener.add("item");
+
+//         div.innerHTML = `
+
+//                         <div class="card-item">
+//                             <div class="card-item-img">
+//                                 <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+//                                     alt="">
+//                             </div>
+//                             <div class="card-item-text">
+//                                 <div class="food-name">
+//                                     <h5>Chicken Curry</h5>
+//                                     <p>Chicken Curry is a popular Indian dish made.</p>
+//                                 </div>
+//                                 <div class="price-box">
+
+//                                     <div class="price">
+//                                         <h5 class="old">₹100</h5>
+//                                         <h5 class="new">₹100 <span>NEW USER OFFER</span></h5>
+//                                     </div>
+
+//                                     <div class="btn-add">
+                                       
+                                           
+//                                             <button>ADD TO CART</button>
+                                       
+
+//                                     </div>
+//                                 </div>
+//                                 <div class="like">
+//                                     <i class="ri-heart-line"></i>
+//                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+//                                 </div>
+//                             </div>
+//                         </div>`
+
+//         cardBox.appendChild(div)
+//          console.log(cardItemName);
+//     })
+   
+    
+// }
+// product()
+
+ 
+
+
+function demo(){
+    console.log(cardItemName);
+    console.log(cardItemName[0]);
+    let cardHtml = '';
+    cardItemName.forEach((items, key) => {
+        cardHtml += `
+
+                        <div class="card-item">
+                            <div class="card-item-img">
+                                <img src="${items.image}"
+                                    alt="">
+                            </div>
+                            <div class="card-item-text">
+                                <div class="food-name">
+                                    <h5>${items.name}</h5>
+                                    <p>${items.description}.</p>
+                                </div>
+                                <div class="price-box">
+
+                                    <div class="price">
+                                        <h5 class="old">${items.old_price}</h5>
+                                        <h5 class="new">${items.new_price} <span>${items.user}</span></h5>
+                                    </div>
+
+                                    <div class="btn-add">
+                                       
+                                           
+                                            <button>${items.btn}</button>
+                                       
+
+                                    </div>
+                                </div>
+                                <div class="like">
+                                    <div class="like-box">
+                                    <i class="ri-heart-line"></i>
+                                    <p class="mb-0">${items.like_count}</p>
+                                    </div>
+                                    <div class="buy-count">
+                                    <p class="mb-0">(${items.buy_count})+bought this week</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>`;
+    })
+    cardBox.innerHTML = cardHtml
+    console.table(cardHtml)
+}
+demo()
+
+
+
+
+
+
+
+
+
+
+
+// cardItem.addEventListener("click", function (e) {
+//    e.stopPropagation();
+//   productDitals.style.display = "flex";
+  
+  
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

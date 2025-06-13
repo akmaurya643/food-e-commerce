@@ -32,6 +32,7 @@
 
 const cardItemName = [
     {
+        "id": 1,
         "name": "Chicken Curry",
         "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "old_price": "₹100",
@@ -45,6 +46,7 @@ const cardItemName = [
         "like_count" : "4/58"
     },
     {
+        "id": 2,
         "name": "Chicken Curry",
         "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "old_price": "₹100",
@@ -58,10 +60,11 @@ const cardItemName = [
         "like_count" : "4/58"
     },
     {
+        "id": 3,
         "name": "Chicken Curry",
         "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "old_price": "₹100",
-        "new_price": "₹100",
+        "old_price": "₹1000",
+        "new_price": "₹399",
         "rating": "4.8/5",
         "user" : "hfflmwk",
         "like": "ri-heart-3-line",
@@ -71,19 +74,21 @@ const cardItemName = [
         "like_count" : "4/58"
     },
     {
+        "id": 4,
         "name": "Chicken Curry",
         "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "old_price": "₹100",
-        "new_price": "₹100",
+        "old_price": "₹1990",
+        "new_price": "₹1199",
         "rating": "4.8/5",
         "user" : "hfflmwk",
         "like": "ri-heart-3-line",
         "description": "Chicken Curry is a popular Indian dish made.",
-        "btn": "ADD TO CART",
+        "btn": "Buy Now",
         "buy_count": "12452",
         "like_count" : "4/58"
     },
     {
+        "id": 5,
         "name": "Chicken Curry",
         "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "old_price": "₹100",

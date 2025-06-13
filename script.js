@@ -139,13 +139,13 @@ form.addEventListener("submit", function(e){
 
 
 function demo(){
-    console.log(cardItemName);
-    console.log(cardItemName[0]);
+    
     let cardHtml = '';
     cardItemName.forEach((items, key) => {
+        
         cardHtml += `
 
-                        <div class="card-item">
+                        <div class="card-item" id="card${(key+1)}">
                             <div class="card-item-img">
                                 <img src="${items.image}"
                                     alt="">
@@ -165,7 +165,7 @@ function demo(){
                                     <div class="btn-add">
                                        
                                            
-                                            <button>${items.btn}</button>
+                                            <button onclick="addtocart(${items.id})">${items.btn}</button>
                                        
 
                                     </div>
@@ -183,11 +183,53 @@ function demo(){
                         </div>`;
     })
     cardBox.innerHTML = cardHtml
-    console.table(cardHtml)
+    
 }
 demo()
 
 
+function addtocart(id){
+    
+    let matchIdData = "";
+    let cartData = localStorage.getItem('cart');
+    cardItemName.forEach((items, key) => {
+        if(items.id == id){
+            matchIdData = items;
+        }
+    });
+    let setData = [];
+    if(cartData == null){
+        setData.push(matchIdData);
+        localStorage.setItem('cart', JSON.stringify(setData));
+    }else{
+        cartData = JSON.parse(localStorage.getItem('cart'));
+        let itemExists = false;
+
+        cartData.forEach((cartItem, index)=>{
+            if(cartItem.id == id){
+                itemExists = true;
+            }
+        });
+
+        if (!itemExists) {
+            cartData.push(matchIdData);
+            localStorage.setItem('cart', JSON.stringify(cartData));
+        }
+    }
+}   
+
+
+showCartData();
+function showCartData(){
+    let = cartData = localStorage.getItem('cart');
+    if(cartData!=null){
+        cartData = JSON.parse(cartData);
+        cartData.forEach((cartItem, index)=>{
+            console.log(cartItem);
+            
+        });
+    }
+}
 
 
 
@@ -197,12 +239,6 @@ demo()
 
 
 
-// cardItem.addEventListener("click", function (e) {
-//    e.stopPropagation();
-//   productDitals.style.display = "flex";
-  
-  
-// })
 
 
 

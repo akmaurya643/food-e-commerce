@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="coffee.css">
+</head>
+
+<body>
+    <main>
+        <header class="header-container">
+            <div class="right-top">
+                <div class="logo">
+                    <h3>A <span>to</span> Z</h3>
+                </div>
+                <div class="nav-first">
+                    <ul class="menu-first">
+                        <li>
+                            <a href="#">
+                                <i class="ri-cup-fill"> </i>
+                                <span>FEEL LIKE HAVINF</span>
+                                <i class="ri-arrow-up-s-fill"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="ri-map-pin-fill"></i>
+                                <span>CHOOSE LOCATION</span>
+                                <i class="ri-arrow-up-s-fill"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="left-culomn">
+                <div class="left-culomn-content">
+                    <button id="login-btn">LOGIN/REGISTER</button>
+                    <button>ORDER NOW</button>
+                </div>
+                <div class="nav-second">
+                    <ul class="menu-second">
+                        <li><a href="#">HOME</a></li>
+
+
+                        <li id="dropdown-list"><a href="#">MENU <i class="ri-arrow-down-s-fill"> </i></a>
+                            <ul class="dropdown" id="dropdown">
+                                <li><a href="#">
+                                        <div class="imagr-box">
+                                            <img src="https://static.vecteezy.com/system/resources/previews/043/215/253/non_2x/a-logo-featuring-the-word-cafe-in-various-typography-styles-for-a-trendy-cafe-brand-experiment-with-different-typography-styles-for-a-minimalist-cafe-logo-free-vector.jpg"
+                                                alt="">
+                                        </div>
+                                        <span>Cafes</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <div class="imagr-box">
+                                            <img src="https://png.pngtree.com/png-clipart/20230916/original/pngtree-breakfast-illustration-of-food-droot-logo-food-illustration-psd-clipart-vector-png-image_12233925.png"
+                                                alt="">
+                                        </div>
+                                        <span>Breckfast</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <div class="imagr-box">
+                                            <img src="https://img.freepik.com/premium-vector/lunchbreak-logo-design-featuring-playful-appetizing-lunch-time-icon_579306-40550.jpg"
+                                                alt="">
+                                        </div>
+                                        <span>Lunch</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <div class="imagr-box">
+                                            <img src="https://t3.ftcdn.net/jpg/02/71/87/46/360_F_271874627_dHmQaKzmsnNjueIQEfbSoGaBBSiCKFYo.jpg"
+                                                alt="">
+                                        </div>
+                                        <span>Drink</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <div class="imagr-box">
+                                            <img src="https://thumbs.dreamstime.com/b/restaurant-icon-symbol-vector-food-fork-knife-dinner-spoon-set-menu-illustration-chef-dish-kitchen-plate-cooking-coffee-sign-163825505.jpg"
+                                                alt="">
+                                        </div>
+                                        <span>Dinner</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+
+
+
+
+                        <li><a href="#">BULK ORDER</a></li>
+                        <li><a href="#">CONTACT US </a></li>
+                        <li><a href="#">OFFER</i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </header>
+        <section class="confirm">
+            <div class="confirm-box">
+                <div class="confirm-box-text">
+                    <h1>Confirm Order</h1>
+                    <p>Your order has been placed successfully</p>
+                </div>
+
+        </section>
+        
+
+
+        <section class="order-success">
+
+           <div class="changeBtnBox">
+            <ul id="boxChangeBtn"></ul>
+                <!-- <li><a href="#">Change</a></li>
+                <li><a href="#">Cancel</a></li>
+                <li><a href="#">Print</a></li> -->
+            </ul>
+           </div>
+
+
+           <div class="coffee-box" id="coffee-box"></div>
+                            
+                           
+                                
+        </section>
+    </main>
+</body>
+<script src="coffee.js"></script>
+<!-- <script src="../script.js"></script> -->
+</html>

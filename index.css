@@ -1653,7 +1653,8 @@
 .banner {
   width: 100%;
   height: 500px;
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
+  margin: 1rem 0; 
 }
 .banner-text {
   width: 100%;

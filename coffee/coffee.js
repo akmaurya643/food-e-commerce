@@ -193,26 +193,32 @@ const boxChangeBtn = [
 {
     "id": 1,
     "name": "Cappuccino",
+    "link": "https://www.google.com"
 },
 {
     "id": 2,
     "name": "Flat white",
+    "link": "https://www.google.com"
 },
 {
     "id": 3,
     "name": "Latte",
+    "link": "https://www.google.com"
 }, 
 {
     "id": 4,
     "name": "Mocha",
+    "link": "https://www.google.com"
 },
 {
     "id": 5,
     "name": "Americano",
+    "link": "https://www.google.com"
 },
 {
     "id": 6,
     "name": "Caffè macchiato",
+    "link": "https://www.google.com"
 },  
 ]
 
@@ -221,7 +227,7 @@ function btn(){
     boxChangeBtn.forEach((items, key) => {
         btnHTML += `
         <li id="btn${(key+1)}">
-            <a href="#">${items.name}</a>
+            <a href="${items.link}">${items.name}</a>
             </li>
         `   
     })

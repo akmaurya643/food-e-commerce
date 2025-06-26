@@ -1,7 +1,16 @@
 let coffeeBox = document.getElementById("coffee-box");
 let ChangeBtn = document.getElementById("boxChangeBtn");
-
-
+let dropdown = document.getElementById("dropdown");
+let dropdownList = document.getElementById("dropdown-list");
+   dropdownList.addEventListener("mouseover", function () {
+    // dropdown.style.display = "block";
+    dropdown.style.top = "5rem";
+    dropdown.style.right = "5rem";
+})
+    dropdownList.addEventListener("mouseout", function () {
+    // dropdown.style.display = "block";
+    dropdown.style.top = "-30rem";
+})
 const cardCoffeeName = [
     {
         "id": 1,

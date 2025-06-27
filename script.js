@@ -9,27 +9,8 @@ let closepage = document.getElementById("closepage");
 let cardItem = document.querySelectorAll(".card-item");
 
 
-    let loginPage = document.getElementById("login-page");
-    let loginBtn = document.getElementById("login-btn");
     
-    loginBtn.addEventListener("click", function () {
-        loginPage.style.display = "flex";
-    });
-   
-    
-
   
-
-    let register = document.getElementById("register");
-    let registerBtn = document.getElementById("register-btn");
-    
-    registerBtn.addEventListener("click", function () {
-        register.style.display = "flex";
-       
-        
-        
-    });
-
 
 cardItem.forEach(function (item) {
     //  item.stopPropagation();
@@ -46,14 +27,6 @@ cardItem.forEach(function (item) {
 
 
 
-    let loginTo = document.getElementById("loginTo");
-    let addressBpx = document.getElementById("address-bpx");
-    loginTo.addEventListener("click", function () {
-        addressBpx.style.display = "block";
-        // console.log("loginTo");
-        
-        
-    });
 
     dropdownList.addEventListener("mouseover", function () {
     // dropdown.style.display = "block";
@@ -76,16 +49,7 @@ closeCard.addEventListener("click", function () {
 
 
 
-const form = document.getElementById("address-bpx");
-form.addEventListener("submit", function(e){
-    e.preventDefault();
-    const formData = new FormData(form);
-    const formDataObject = Object.fromEntries(formData.entries());
-       console.log("Form data object:", formDataObject);
-       localStorage.setItem("user", JSON.stringify(formDataObject))
-       window.location.href = "index2.html"
-     
-})
+
 
 // function product(){
 //     let cardBox = document.getElementById("card-box");

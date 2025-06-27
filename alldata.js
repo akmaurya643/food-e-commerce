@@ -1,34 +1,3 @@
-// const allData = {
-//   "logo": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D",
-//   "appName": "TronSecure",
-//   "appDescription": "TronSecure is a platform that provides a secure and convenient way to manage your personal finances. With TronSecure, you can easily track your expenses, create budgets, and monitor your investments. It's a comprehensive financial management tool that helps you stay on top of your finances and achieve your financial goals.",
-//   "menus": [
-//     {
-//       "name": "Home",
-//       "link": "index.html"
-//     },
-//     {
-//       "name": "Dashboard",
-//       "children": [
-//         {
-//           "name": "Dashboard",
-//           "link": "index.html"
-//         },
-//         {
-//           "name": "Transactions",
-//           "link": "index.html"
-//         }
-//       ]
-//     },
-//     {
-//       "name": "Settings",
-//       "link": "index.html"
-//     }
-//   ],
-//   "products": [
-
-//   ]
-// }
 
 const cardItemName = [
     {
@@ -155,6 +124,49 @@ const productDitals2 = [
 
 ]
 
+let heroSlider = document.getElementById("hero-slider")
+const heroBox = [
+    {
+        "id": 1,
+
+        "image": "https://images.unsplash.com/photo-1665580756200-329d2e060b1f?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZGFyayUyMGJhY2tncm91bmQlMjBmb29kfGVufDB8fDB8fHww"
+    },
+    {
+        "id": 2,
+        "image": "https://images.unsplash.com/photo-1726241966334-6e9f1de905d6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fGRhcmslMjBiYWNrZ3JvdW5kJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D"
+    },
+    {
+          
+        "id": 3,
+        "image": "https://media.istockphoto.com/id/589135154/photo/herbs-and-spices-over-black-stone-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=pnSwlU8n-38HvUsCOE_r3OYklT1O1WAyijrIMp2g9_g="
+    
+    }
+]
+
+function hero2() {
+    let herohtml = "";
+    heroBox.forEach((items, key) => {
+        let active = "";
+        if(key==0){
+            active = "active";
+        }
+        herohtml += `
+<div class="carousel-item ${active}" data-bs-interval="1500">
+                        <div class="hero-image-box">
+                            <img src="${items.image}"
+                                class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+`
+    })
+    heroSlider.innerHTML = herohtml
+}
+hero2()
+
+
+
+
+
 
 
 let buttonList = document.getElementById("button-list");
@@ -163,26 +175,30 @@ const btnListName2 = [
         "id": 1,
         "name": "Coffee",
         "image": "https://www.citypng.com/public/uploads/preview/brown-coffee-cup-logo-design-hd-png-701751694776791z8t9jck4mz.png",
-        "link": "./coffee/index.html"
+        "link": "./coffee/index.html?type=coffee"
     },
     {
         "id": 2,
-        "name": "Pizza",    
-        "image": "https://static.vecteezy.com/system/resources/thumbnails/011/157/909/small_2x/pizzeria-emblem-on-blackboard-pizza-logo-template-emblem-for-cafe-restaurant-or-food-delivery-service-vector.jpg"
+        "name": "Pizza",
+        "image": "https://static.vecteezy.com/system/resources/thumbnails/011/157/909/small_2x/pizzeria-emblem-on-blackboard-pizza-logo-template-emblem-for-cafe-restaurant-or-food-delivery-service-vector.jpg",
+        "link": "./coffee/index.html?type=pizza"
     },
     {
         "id": 3,
         "name": "Paneer Tikka",
-        "image": "https://media.istockphoto.com/id/1186759790/photo/paneer-tikka-at-skewers-in-black-bowl-at-dark-slate-background-paneer-tikka-is-an-indian.jpg?s=612x612&w=0&k=20&c=cITToqM1KEnrixXjoLhEciqP24SxdKtW3QXykq-W5OE="
+        "image": "https://media.istockphoto.com/id/1186759790/photo/paneer-tikka-at-skewers-in-black-bowl-at-dark-slate-background-paneer-tikka-is-an-indian.jpg?s=612x612&w=0&k=20&c=cITToqM1KEnrixXjoLhEciqP24SxdKtW3QXykq-W5OE=",
+        "link": "./coffee/index.html?type=paneer-tika"
     },
     {
         "id": 4,
         "name": "Chicken",
-        "image": "https://img.freepik.com/premium-vector/chicken-logo-design-vector-template-creative-logo-brand_628348-64.jpg"
-    } , {
+        "image": "https://img.freepik.com/premium-vector/chicken-logo-design-vector-template-creative-logo-brand_628348-64.jpg",
+        "link": "./coffee/index.html?type=chicken"
+    }, {
         "id": 5,
         "name": "Chili Sauce",
-        "image": "https://static.vecteezy.com/system/resources/thumbnails/048/201/639/small/spicy-chili-sauce-logo-design-the-concept-of-chilli-and-fire-for-sauce-products-spicy-foods-and-others-vector.jpg"
+        "image": "https://static.vecteezy.com/system/resources/thumbnails/048/201/639/small/spicy-chili-sauce-logo-design-the-concept-of-chilli-and-fire-for-sauce-products-spicy-foods-and-others-vector.jpg",
+        "link": "./coffee/index.html?type=chilli-source"
     },
     {
         "id": 6,
@@ -193,7 +209,7 @@ const btnListName2 = [
         "id": 7,
         "name": "Burger",
         "image": "https://www.logoground.com/uploads11/dv11y20231586352023-02-034285667jeremie_Bursting-Cheese-Burger.jpg"
-    }   
+    }
 
 ]
 function btnList() {

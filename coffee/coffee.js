@@ -448,12 +448,14 @@ const headingList = {
     "coffee":{
         "name":"Confirm Order Coffee",
         "short_description":"Your order has been placed successfully",
-        "bg_img":""
+        "bg_img":"",
+        "bg_video":"video/coffee1.mp4"
     },
     "pizza":{
         "name":"Confirm Order Pizza",
         "short_description":"Your order has been placed successfully",
-        "bg_video":"../video/coffee1.mp4"
+        "bg_img":"https://images.unsplash.com/photo-1597983187002-35a3e1c896d6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDUxfHx8ZW58MHx8fHx8",
+        "bg_video":""
     },
 }
 const urlParams = new URLSearchParams(window.location.search);
@@ -474,13 +476,23 @@ headingFun();
 function headingFun() {
     let val = headingList[urlParams.get('type')];
     let bg = document.querySelector(".confirm");
-    let bg_video = document.querySelector("#video");
-
-    let ab = document.querySelector(".confirm-box-text");
-    bg.style.backgroundImage = val.bg_img
-bg_video.innerHTML = ` <source src="../${val.bg_img}" type="video/mp4">`
-
-    ab.innerHTML = `<h1>${val.name}</h1><p>${val.short_description}</p>`
+    
+    let html = ''
+    if(val.bg_video){
+        html += `<video autoplay loop muted plays-inline class="bacbkground-clip" id="vidoe">
+                <source src="../${val.bg_video}" type="video/mp4">
+            </video>`;
+    }
+    if(val.bg_img){
+        bg.style.backgroundImage = `url(${val.bg_img})`;
+    }
+    html += `<div class="confirm-box">
+                <div class="confirm-box-text">
+                    <h1>${val.name}</h1><p>${val.short_description}</p>
+                </div>
+            </div>`
+    
+    bg.innerHTML = html
     
 }
 function cardCoffee() {

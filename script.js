@@ -198,6 +198,29 @@ function showCartData(){
 
 
 
+// =================== hero ====================
+
+let heroSlider = document.getElementById("hero-slider")
+
+function hero2() {
+    let herohtml = "";
+    heroBox.forEach((items, key) => {
+        let active = "";
+        if(key==0){
+            active = "active";
+        }
+        herohtml += `
+<div class="carousel-item ${active}" data-bs-interval="1500">
+                        <div class="hero-image-box">
+                            <img src="${items.image}"
+                                class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+`
+    })
+    heroSlider.innerHTML = herohtml
+}
+hero2()
 
 
 
@@ -212,9 +235,24 @@ function showCartData(){
 
 
 
+// +++++++++++++++++++ food button List +++++++++++++++++++++++++++++++
+let buttonList = document.getElementById("button-list");
+function btnList() {
+    let btnHTML = "";
+    btnListName2.forEach((items, key) => {
+        btnHTML += `
+        
 
-
-
-
-
-
+         <li>
+             <a href="${items.link}">
+                <div class="li-img">
+                                <img src="${items.image}" alt="">
+                </div>
+                <span>${items.name}</span>
+             </a>
+        </li>
+        `
+    })
+    buttonList.innerHTML = btnHTML
+}
+btnList()

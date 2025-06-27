@@ -289,94 +289,190 @@ const cardCoffeeName = {
             "buy_count": "12452",
             "like_count": "4/58"
         },
-        {
-            "id": 8,
-            "name": "Chicken Curry",
-            "image": "https://images.unsplash.com/photo-1736813133794-e01542c0b10d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDQzfHx8ZW58MHx8fHx8",
-            "old_price": "100",
-            "new_price": "100",
-            "rating": "4.8/5",
-            "user": "NEW USER",
-            "like": "ri-heart-3-line",
-            "description": "Chicken Curry is a popular Indian dish made.",
-            "btn": "Buy Now",
-            "buy_count": "12452",
-            "like_count": "4/58"
-        },
-        {
-            "id": 9,
-            "name": "Chicken Curry",
-            "image": "https://images.unsplash.com/photo-1558220829-4694a46bb01f?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI0fHx8ZW58MHx8fHx8",
-            "old_price": "100",
-            "new_price": "100",
-            "rating": "4.8/5",
-            "user": "NEW USER",
-            "like": "ri-heart-3-line",
-            "description": "Chicken Curry is a popular Indian dish made.",
-            "btn": "Buy Now",
-            "buy_count": "12452",
-            "like_count": "4/58"
-        },
-        {
-            "id": 10,
-            "name": "Chicken Curry",
-            "image": "https://images.unsplash.com/photo-1543256840-0709ad5d3726?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI2fHx8ZW58MHx8fHx8",
-            "old_price": "100",
-            "new_price": "100",
-            "rating": "4.8/5",
-            "user": "NEW USER",
-            "like": "ri-heart-3-line",
-            "description": "Chicken Curry is a popular Indian dish made.",
-            "btn": "Buy Now",
-            "buy_count": "12452",
-            "like_count": "4/58"
-        },
-        {
-            "id": 11,
-            "name": "Chicken Curry",
-            "image": "https://images.unsplash.com/photo-1500512296-fcd1ce147878?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHx8",
-            "old_price": "100",
-            "new_price": "100",
-            "rating": "4.8/5",
-            "user": "NEW USER",
-            "like": "ri-heart-3-line",
-            "description": "Chicken Curry is a popular Indian dish made.",
-            "btn": "Buy Now",
-            "buy_count": "12452",
-            "like_count": "4/58"
-        },
-        {
-            "id": 12,
-            "name": "Chicken Curry",
-            "image": "https://images.unsplash.com/photo-1514508985285-52fa488e199a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHx8",
-            "old_price": "100",
-            "new_price": "100",
-            "rating": "4.8/5",
-            "user": "NEW USER",
-            "like": "ri-heart-3-line",
-            "description": "Chicken Curry is a popular Indian dish made.",
-            "btn": "Buy Now",
-            "buy_count": "12452",
-            "like_count": "4/58"
-        },
-        {
-            "id": 13,
-            "image": "https://images.unsplash.com/photo-1514508985285-52fa488e199a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHx8",
-            "name": "Chicken Curry",
-            "old_price": "100",
-            "price": "100",
-            "new_price": "100",
-            "rating": "4.8/5",
-            "user": "NEW USER",
-            "like": "ri-heart-3-line",
-            "description": "Chicken Curry is a popular Indian dish made.",
-            "btn": "Buy Now",
-            "buy_count": "12452",
-            "like_count": "4/58"
-        },
+       
+       
+      
+       
+        
+       
 
 
-    ]
+    ],
+    "paneer-tikka": [
+        {
+            "id": 1,
+            "name": "Pizza",
+            "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBpenphfGVufDB8fDB8fHww",
+            "old_price": "100",
+            "new_price": "100",
+            "rating": "4.8/5",
+            "user": "NEW USER",
+            "like": "ri-heart-3-line",
+            "description": "Chicken Curry is a popular Indian dish made.",
+            "btn": "Buy Now",
+            "buy_count": "12452",
+            "like_count": "4/58"
+        },
+        {
+            "id": 2,
+            "name": "Chicken Curry",
+            "image": "https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D",
+            "old_price": "100",
+            "new_price": "100",
+            "rating": "4.8/5",
+            "user": "NEW USER",
+            "like": "ri-heart-3-line",
+            "description": "Chicken Curry is a popular Indian dish made.",
+            "btn": "Buy Now",
+            "buy_count": "12452",
+            "like_count": "4/58"
+        },
+        {
+            "id": 3,
+            "name": "Chicken Curry",
+            "image": "https://images.unsplash.com/photo-1520006635556-32d930402dc6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D",
+            "old_price": "1000",
+            "new_price": "399",
+            "rating": "4.8/5",
+            "user": "NEW USER",
+            "like": "ri-heart-3-line",
+            "description": "Chicken Curry is a popular Indian dish made.",
+            "btn": "Buy Now",
+            "buy_count": "12452",
+            "like_count": "4/58"
+        },
+        {
+            "id": 4,
+            "name": "Chicken Curry",
+            "image": "https://images.unsplash.com/photo-1713810466379-420efd57b168?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDU3fHx8ZW58MHx8fHx8",
+            "old_price": "1990",
+            "new_price": "1199",
+            "rating": "4.8/5",
+            "user": "NEW USER",
+            "like": "ri-heart-3-line",
+            "description": "Chicken Curry is a popular Indian dish made.",
+            "btn": "Buy Now",
+            "buy_count": "12452",
+            "like_count": "4/58"
+        },
+        {
+            "id": 5,
+            "name": "Chicken Curry",
+            "image": "https://images.unsplash.com/photo-1736813132520-8be4b9705dee?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDQ4fHx8ZW58MHx8fHx8",
+            "old_price": "100",
+            "new_price": "100",
+            "rating": "4.8/5",
+            "user": "NEW USER",
+            "like": "ri-heart-3-line",
+            "description": "Chicken Curry is a popular Indian dish made.",
+            "btn": "",
+            "buy_count": "12452",
+            "like_count": "4/58"
+        },
+        {
+            "id": 6,
+            "name": "Chicken Curry",
+            "image": "https://images.unsplash.com/photo-1444418185997-1145401101e0?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDQ3fHx8ZW58MHx8fHx8",
+            "old_price": "100",
+            "new_price": "100",
+            "rating": "4.8/5",
+            "user": "NEW USER",
+            "like": "ri-heart-3-line",
+            "description": "Chicken Curry is a popular Indian dish made.",
+            "btn": "Buy Now",
+            "buy_count": "12452",
+            "like_count": "4/58"
+        },
+        {
+            "id": 7,
+            "name": "Chicken Curry",
+            "image": "https://images.unsplash.com/photo-1713274789041-97ed68b0db22?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDQ1fHx8ZW58MHx8fHx8",
+            "old_price": "100",
+            "new_price": "100",
+            "rating": "4.8/5",
+            "user": "NEW USER",
+            "like": "ri-heart-3-line",
+            "description": "Chicken Curry is a popular Indian dish made.",
+            "btn": "Buy Now",
+            "buy_count": "12452",
+            "like_count": "4/58"
+        },
+       
+       
+      
+       
+        
+       
+
+
+    ],
+    "chicken":[
+ {
+            "id": 1,
+            "name": "Pizza",
+            "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBpenphfGVufDB8fDB8fHww",
+            "old_price": "100",
+            "new_price": "100",
+            "rating": "4.8/5",
+            "user": "NEW USER",
+            "like": "ri-heart-3-line",
+            "description": "Chicken Curry is a popular Indian dish made.",
+            "btn": "Buy Now",
+            "buy_count": "12452",
+            "like_count": "4/58"
+        },
+    ],
+    "chilli-souce":[
+ {
+            "id": 1,
+            "name": "Pizza",
+            "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBpenphfGVufDB8fDB8fHww",
+            "old_price": "100",
+            "new_price": "100",
+            "rating": "4.8/5",
+            "user": "NEW USER",
+            "like": "ri-heart-3-line",
+            "description": "Chicken Curry is a popular Indian dish made.",
+            "btn": "Buy Now",
+            "buy_count": "12452",
+            "like_count": "4/58"
+        },
+    ],
+     "noodles":[
+ {
+            "id": 1,
+            "name": "Pizza",
+            "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBpenphfGVufDB8fDB8fHww",
+            "old_price": "100",
+            "new_price": "100",
+            "rating": "4.8/5",
+            "user": "NEW USER",
+            "like": "ri-heart-3-line",
+            "description": "Chicken Curry is a popular Indian dish made.",
+            "btn": "Buy Now",
+            "buy_count": "12452",
+            "like_count": "4/58"
+        },
+    ],
+      "burger":[
+ {
+            "id": 1,
+            "name": "Pizza",
+            "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBpenphfGVufDB8fDB8fHww",
+            "old_price": "100",
+            "new_price": "100",
+            "rating": "4.8/5",
+            "user": "NEW USER",
+            "like": "ri-heart-3-line",
+            "description": "Chicken Curry is a popular Indian dish made.",
+            "btn": "Buy Now",
+            "buy_count": "12452",
+            "like_count": "4/58"
+        },
+    ],
+
+
+
 }
 const boxChangeBtn = {
     "coffee": [
@@ -442,7 +538,97 @@ const boxChangeBtn = {
             "name": "Caffè macchiato",
             "link": "https://www.google.com"
         },
+    ],
+    
+    "paneer-tikka": [
+        {
+            "id": 1,
+            "name": "Cappuccino pizza",
+            "link": "https://www.google.com"
+        },
+        {
+            "id": 2,
+            "name": "Flat white",
+            "link": "https://www.google.com"
+        },
+        {
+            "id": 3,
+            "name": "Latte",
+            "link": "https://www.google.com"
+        },
+        {
+            "id": 4,
+            "name": "Mocha",
+            "link": "https://www.google.com"
+        },
+        {
+            "id": 5,
+            "name": "Americano",
+            "link": "https://www.google.com"
+        },
+        {
+            "id": 6,
+            "name": "Caffè macchiato",
+            "link": "https://www.google.com"
+        },
+        
+    ],
+    "chicken":[
+        {
+            "id": 1,
+            "name": "Cappuccino chicken",
+            "link": "https://www.google.com"
+        },
+        {
+            "id": 2,
+            "name": "Flat white",
+            "link": "https://www.google.com"
+        },
+        {
+            "id": 3,
+            "name": "Latte",
+            "link": "https://www.google.com"
+        },
+        {
+            "id": 4,
+            "name": "Mocha",
+            "link": "https://www.google.com"
+        },
+        {
+            "id": 5,
+            "name": "Americano",
+            "link": "https://www.google.com"
+        },
+        {
+            "id": 6,
+            "name": "Caffè macchiato",
+            "link": "https://www.google.com"
+        },
+
+    ],
+    "chilli-souce":[
+{
+            "id": 1,
+            "name": "Cappuccino chicken",
+            "link": "https://www.google.com"
+        },
+    ],
+    "noodles":[
+{
+            "id": 1,
+            "name": "Cappuccino chicken",
+            "link": "https://www.google.com"
+        },
+    ],
+    "burger":[
+     {
+            "id": 1,
+            "name": "Cappuccino chicken",
+            "link": "https://www.google.com"
+        },   
     ]
+
+
 }
 const headingList = {
     "coffee":{
@@ -457,6 +643,41 @@ const headingList = {
         "bg_img":"https://images.unsplash.com/photo-1597983187002-35a3e1c896d6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDUxfHx8ZW58MHx8fHx8",
         "bg_video":""
     },
+     "paneer-tikka":{
+        "name":"Confirm Order Pizza",
+        "short_description":"Your order has been placed successfully",
+        "bg_img":"https://images.unsplash.com/photo-1597983187002-35a3e1c896d6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDUxfHx8ZW58MHx8fHx8",
+        "bg_video":""
+    },
+    "chicken":{
+        "name":"Confirm Order chicken",
+        "short_description":"Your order has been placed successfully",
+        "bg_img":"https://images.unsplash.com/photo-1597983187002-35a3e1c896d6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDUxfHx8ZW58MHx8fHx8",
+        "bg_video":""
+
+    },
+    "chilli-souce":{
+        "name":"Confirm Order chicken",
+        "short_description":"Your order has been placed successfully",
+        "bg_img":"https://images.unsplash.com/photo-1597983187002-35a3e1c896d6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDUxfHx8ZW58MHx8fHx8",
+        "bg_video":""
+
+    },
+    "noodles":{
+        "name":"Confirm Order chicken",
+        "short_description":"Your order has been placed successfully",
+        "bg_img":"https://images.unsplash.com/photo-1597983187002-35a3e1c896d6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDUxfHx8ZW58MHx8fHx8",
+        "bg_video":""
+
+    },
+    "burger":{
+        "name":"Confirm Order chicken",
+        "short_description":"Your order has been placed successfully",
+        "bg_img":"https://images.unsplash.com/photo-1597983187002-35a3e1c896d6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDUxfHx8ZW58MHx8fHx8",
+        "bg_video":""
+
+    }
+    
 }
 const urlParams = new URLSearchParams(window.location.search);
 console.log(urlParams.get('type'));

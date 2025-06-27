@@ -124,7 +124,6 @@ const productDitals2 = [
 
 ]
 
-let heroSlider = document.getElementById("hero-slider")
 const heroBox = [
     {
         "id": 1,
@@ -143,25 +142,6 @@ const heroBox = [
     }
 ]
 
-function hero2() {
-    let herohtml = "";
-    heroBox.forEach((items, key) => {
-        let active = "";
-        if(key==0){
-            active = "active";
-        }
-        herohtml += `
-<div class="carousel-item ${active}" data-bs-interval="1500">
-                        <div class="hero-image-box">
-                            <img src="${items.image}"
-                                class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-`
-    })
-    heroSlider.innerHTML = herohtml
-}
-hero2()
 
 
 
@@ -169,7 +149,8 @@ hero2()
 
 
 
-let buttonList = document.getElementById("button-list");
+
+
 const btnListName2 = [
     {
         "id": 1,
@@ -187,7 +168,7 @@ const btnListName2 = [
         "id": 3,
         "name": "Paneer Tikka",
         "image": "https://media.istockphoto.com/id/1186759790/photo/paneer-tikka-at-skewers-in-black-bowl-at-dark-slate-background-paneer-tikka-is-an-indian.jpg?s=612x612&w=0&k=20&c=cITToqM1KEnrixXjoLhEciqP24SxdKtW3QXykq-W5OE=",
-        "link": "./coffee/index.html?type=paneer-tika"
+        "link": "./coffee/index.html?type=paneer-tikka"
     },
     {
         "id": 4,
@@ -198,36 +179,19 @@ const btnListName2 = [
         "id": 5,
         "name": "Chili Sauce",
         "image": "https://static.vecteezy.com/system/resources/thumbnails/048/201/639/small/spicy-chili-sauce-logo-design-the-concept-of-chilli-and-fire-for-sauce-products-spicy-foods-and-others-vector.jpg",
-        "link": "./coffee/index.html?type=chilli-source"
+        "link": "./coffee/index.html?type=chilli-souce"
     },
     {
         "id": 6,
         "name": "Noodles",
-        "image": "https://t4.ftcdn.net/jpg/01/39/05/09/360_F_139050937_LkiKRCb97x2Ybc5urilz314mLQRUcHfn.jpg"
+        "image": "https://t4.ftcdn.net/jpg/01/39/05/09/360_F_139050937_LkiKRCb97x2Ybc5urilz314mLQRUcHfn.jpg",
+        "link": "./coffee/index.html?type=noodles"
     },
     {
         "id": 7,
         "name": "Burger",
-        "image": "https://www.logoground.com/uploads11/dv11y20231586352023-02-034285667jeremie_Bursting-Cheese-Burger.jpg"
+        "image": "https://www.logoground.com/uploads11/dv11y20231586352023-02-034285667jeremie_Bursting-Cheese-Burger.jpg",
+        "link": "./coffee/index.html?type=burger"
     }
 
 ]
-function btnList() {
-    let btnHTML = "";
-    btnListName2.forEach((items, key) => {
-        btnHTML += `
-        
-
-         <li>
-             <a href="${items.link}">
-                <div class="li-img">
-                                <img src="${items.image}" alt="">
-                </div>
-                <span>${items.name}</span>
-             </a>
-        </li>
-        `
-    })
-    buttonList.innerHTML = btnHTML
-}
-btnList()

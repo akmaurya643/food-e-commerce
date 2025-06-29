@@ -47,17 +47,37 @@ closeCard.addEventListener("click", function () {
     showCard.style.display = "none";
 })
 
+// ------------ header menu --------------
+let leftCulomn = document.getElementById("left-culomn");
+let open1 = document.getElementById("open1");
+let close1 = document.getElementById("close1");
+open1.addEventListener("click", function () {
+    leftCulomn.style.display = "block";
+    close1.style.display = "block";
+    open1.style.display = "none";
+})
+close1.addEventListener("click", function () {
+    leftCulomn.style.display = "none";
+    close1.style.display = "none";
+    open1.style.display = "block";
+})
 
+//========================= card-container ==========================
+ let cardContainer = document.getElementById("button-addToCart");
+let open2 = document.getElementById("open2");
+let close2 = document.getElementById("close2");
 
-
-
-// function product(){
-//     let cardBox = document.getElementById("card-box");
-//     cardBox.forEach((item, key) => {
-//          let div = document.createElement("div")
-//         div.addEventListener.add("item");
-
-//         div.innerHTML = `
+open2.addEventListener("click", function () {
+    cardContainer.style.display = "block";
+    close2.style.display = "block";
+    open2.style.display = "none";
+})
+close2.addEventListener("click", function () {
+    cardContainer.style.display = "none";
+    close2.style.display = "none";
+    open2.style.display = "block";
+})
+     
 
 //                         <div class="card-item">
 //                             <div class="card-item-img">
